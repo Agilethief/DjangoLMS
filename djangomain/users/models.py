@@ -16,6 +16,9 @@ class User(models.Model):
         default=True
     )  # This is used to deactivate a user.
     user_permissions = models.CharField(max_length=100)  # Student, teacher, admin
+    user_SISID = models.CharField(
+        max_length=100, default="0"
+    )  # This is the student information system ID.
 
     def __str__(self):
         return self.user_name
