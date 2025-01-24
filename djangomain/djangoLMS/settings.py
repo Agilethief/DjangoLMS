@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     "courses.apps.CoursesConfig",
     "users.apps.UsersConfig",
     "assessments.apps.AssessmentsConfig",
+    "frontend.apps.FrontendConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
