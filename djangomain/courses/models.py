@@ -8,7 +8,7 @@ from django.utils import timezone
 
 # The course is the main model and collection of items that makes up a learning experience.
 class Course(models.Model):
-    course_name = models.CharField(max_length=100)
+    course_name = models.CharField(max_length=100, unique=True)
     course_overview = models.TextField()
     course_duration = models.IntegerField()
     course_image = models.TextField()  # This would be a thumbnail image for the course.

@@ -77,7 +77,7 @@ WSGI_APPLICATION = "djangoLMS.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
+# Just using the built in one for proof of concept.
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -130,4 +130,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
+    "DEFAULT_PERMISSION_CLASSES": [],  # for local dev, needs to change for production
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
 }

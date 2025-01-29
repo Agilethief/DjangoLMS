@@ -35,4 +35,5 @@ urlpatterns = [
     path("", include(router.urls)),
     path("api-courses/", include("rest_framework.urls", namespace="rest_framework")),
     path("frontend/", include("frontend.urls")),
+    path("courses/", include("courses.urls")),
 ]
